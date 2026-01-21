@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiket Renang</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .bg-blue {
+            background-color: #0d6efd;
+        }
+        .text-blue {
+            color: #0d6efd;
+        }
+        .btn-blue {
+            background-color: #0d6efd;
+            color: white;
+        }
+        .btn-blue:hover {
+            background-color: #0b5ed7;
+        }
+        .hero {
+            background: linear-gradient(rgba(13,110,253,0.6), rgba(13,110,253,0.6)),
+            url('https://images.unsplash.com/photo-1505765050516-f72dcac9c60b') center/cover no-repeat;
+            color: white;
+            padding: 90px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Tiket Renang</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="fw-bold">Tiket Kolam Renang</h1>
+        <p class="lead">Segarkan hari Anda dengan berenang</p>
+        <a href="#beli" class="btn btn-light btn-lg">Beli Tiket</a>
+    </div>
+</section>
+
+<!-- Daftar Tiket -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center text-blue mb-4">Harga Tiket</h2>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Anak-anak</h5>
+                        <p class="display-6 fw-bold">Rp 15.000</p>
+                        <p>Usia di bawah 12 tahun</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Dewasa</h5>
+                        <p class="display-6 fw-bold">Rp 25.000</p>
+                        <p>Usia 12 tahun ke atas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Rombongan</h5>
+                        <p class="display-6 fw-bold">Rp 20.000</p>
+                        <p>Minimal 10 orang</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Form Pembelian -->
+<section id="beli" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center text-blue mb-4">Form Pembelian Tiket</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nama Pembeli</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Jenis Tiket</label>
+                        <select class="form-select">
+                            <option>Anak-anak</option>
+                            <option>Dewasa</option>
+                            <option>Rombongan</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Jumlah Tiket</label>
+                        <input type="number" class="form-control" min="1" value="1">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tanggal Kunjungan</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <button class="btn btn-blue w-100">Pesan Tiket</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue text-white text-center py-3">
+    <p class="mb-0">© 2026 Tiket Renang</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
